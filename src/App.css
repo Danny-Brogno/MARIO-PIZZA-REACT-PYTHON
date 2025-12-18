@@ -321,7 +321,7 @@ header nav section.searchBar-chart ol li i {
   width: 100%;
   height: 100%;
   padding: 30px;
-  color: white;
+  color: var(--pizza-beige);
 }
 
 .under-header .under-header-content {
@@ -362,19 +362,19 @@ header nav section.searchBar-chart ol li i {
 }
 
 .under-header .learn-more-btn {
-  background-color: var(--color-primary-blue);
-  color: var(--color-text-light);
+  background-color: var(--pizza-green);
+  color: var(--pizza-yellow);
   border: none;
-  padding: 10px 20px;
+  padding: 15px 25px;
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: 0.3s;
 }
 
 .under-header .learn-more-btn:hover {
-  background-color: #0056b3;
+  background-color: var(--pizza-red);
 }
 
 /* UNDER HEADER START */
