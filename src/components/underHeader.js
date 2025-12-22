@@ -24,9 +24,10 @@ export const UnderHeader = () => {
           
           {/* data-splitting tells the library which text to target */}
           <p className="under-header-text" data-splitting>
-            From a deep love of Italian dough, Mario is now going across the land to give you the tastiest slice! 
-            He bakes every product based on its texture, flavor, freshness, and crust. 
-            Follow his passion and make sure your next dinner is the pizza one.
+            Experience authentic Italian craftsmanship. 
+            Order online, takeaway, or dine in to enjoy passion in every bite. 
+            Our masters bake fresh, high-quality pizzas using traditional techniques. 
+            Follow our love for perfect crust and texture; make your next dinner a pizza one!
           </p>
           
           <button className="order-now-btn">

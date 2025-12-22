@@ -148,7 +148,7 @@ header {
   position: fixed;
   top: -150px;
   width: 100%;
-  z-index: 10;
+  z-index: 999;
   transition: top 0.3s;
   border-bottom: 1px solid var(--pizza-green);
   background-color: var(--pizza-red);
@@ -449,17 +449,16 @@ main section.main-container h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
-  height: 800px;
+  min-height: 800px;
 }
 
 .container .firstLine,
 .container .secondLine,
 .container .thirdLine {
-  width: 80%;
-  height: 33%;
+  width: 100%;
+  height: 50%;
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -468,7 +467,7 @@ main section.main-container h1 {
 .box {
   width: calc(100% / 3);
   height: 100%;
-  border: 0.5px solid var(--pizza-beige);
+  border: 2px solid var(--pizza-beige);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -476,6 +475,7 @@ main section.main-container h1 {
   cursor:pointer;
   position: relative;
   transition: 1s ease;
+  border-radius: 8px;
 }
 
 .box img {
@@ -484,6 +484,7 @@ main section.main-container h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 8px;
 }
 
 .dark {
@@ -570,7 +571,8 @@ main section.main-container h1 {
 }
 
 .banner section.banner-section div {
-  width:100%;
+  width:calc(100% - 40px);
+  margin-right:10px;
   height:100%;
   display: flex;
   align-items: center;
@@ -578,13 +580,17 @@ main section.main-container h1 {
   flex-direction: column;
 }
 
+.banner section.banner-section div:last-of-type {
+  margin-right: 0px;
+}
+
 .banner section.banner-section .one img,
 .banner section.banner-section .two img,
 .banner section.banner-section .three img,
 .banner section.banner-section .four img,
 .banner section.banner-section .five img {
-  width: 90%;
-  height: 60%;
+  width: 100%;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -790,12 +796,13 @@ main section.main-container h1 {
 
 .jumbotron-container {
   width: 100%;
-  margin: 101px 0px;
+  margin: 8em 0em
 }
 
 .jumbotron-container section {
   width:90%;
-  height:100%;
+  height:700px;
+  min-height: 700px;
   margin:0 auto;
   display: flex;
 }
@@ -843,10 +850,11 @@ main section.main-container h1 {
 }
 
 .jumbotron-container section .container-right {
-  width:50%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .jumbotron-container section .container-right .text {
@@ -859,12 +867,12 @@ main section.main-container h1 {
 }
 
 .jumbotron-container section .container-right .text h2 {
-  font-size: 2.5em;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
 .jumbotron-container section .container-right .text h3 {
-  font-size: 1.8em;
+  font-size: 30px;
 }
 
 .jumbotron-container section .container-right p {
@@ -873,8 +881,8 @@ main section.main-container h1 {
   margin:0 auto;
   display: flex;
   align-items: center;
-  line-height: 45px;
-  font-size: 1.5em;
+  line-height: 50px;
+  font-size: 1.6em;
 }
 
 .jumbotron-container section .container-right .btn-container {
@@ -933,16 +941,20 @@ main section.main-container h1 {
   font-size: 5em;
   margin-bottom: 1em;
 }
+
 .under-grid .top {
   display: flex;
   justify-content: space-evenly;
+  width:90%;
+  margin:0 auto;
 }
 
 .under-grid .top div {
   background-color: var(--pizza-green);
   color: var(--pizza-beige);
-  width: calc(24% - 20px);
-  margin: 0 10px 40px 10px;
+  width: calc(25% - 20px);
+  /* margin: 0 10px 40px 10px; */
+  margin: 0px 10px 0px 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -956,33 +968,29 @@ main section.main-container h1 {
   4px 0 6px -1px rgba(9, 23, 54, 0.15);
 }
 
-.under-grid .top div i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--normal-white);
-  color: var(--normal-black);
-  font-size: 2em;
-  border-radius: 50%;
-  padding: 1em;
-  margin-top: 1em;
+.under-grid .top div img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin-top:10px;
 }
 
 .under-grid .top div h3 {
-  margin: 2em 0em;
-  font-size: 1.5em;
+  margin: 1em 0em;
+  font-size: 3em;
+  color: var(--pizza-yellow)
 }
 
 .under-grid .top div p {
   width: 90%;
   margin:0 auto 1em auto;
-  font-size: 1.2em;
+  font-size: 2em;
   line-height: 40px;
 }
 
 /* BOTTOM */
 .under-grid .bottom {
-  margin: 5em 0em 0em 0em;
+  margin: 8em 0em 0em 0em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -997,7 +1005,41 @@ main section.main-container h1 {
 .under-grid .bottom p {
   width:80%;
   margin: 2em auto 0em auto;
-  font-size: 1.5em;
+  font-size: 2em;
+  line-height: 60px;
+}
+
+
+.under-grid .bottom .circle {
+  position: relative;
+  overflow: visible;
+}
+
+.under-grid .bottom .circle img {
+  border-radius: 100%;
+  max-width: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.under-grid .bottom .pizza__smoke {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  z-index: 10;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/386739/smoke.png);
+  background-size: 100% auto;
+  animation: smoke-animation 8s linear infinite;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+@keyframes smoke-animation {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 340%; }
 }
 
 /* ------------------------------------------- */
@@ -1008,8 +1050,8 @@ main section.main-container h1 {
 
 section.wrapped-text-section {
   position: relative;
-  width: 100%;
-  padding: 50px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 section.wrapped-text-section .circle {
@@ -1717,14 +1759,14 @@ footer section .scroll-top-btn ul:hover {
   
   .jumbotron-container section .container-right .text h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 0;
     margin: 2em 0em 1em 0em;
   }
   
   .jumbotron-container section .container-right .text h3 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 0;
     margin: 0em 0em 1em 0em;
   }
@@ -1733,11 +1775,84 @@ footer section .scroll-top-btn ul:hover {
     margin:1em 0em;
   }
   
+  .jumbotron-container section .container-right p {
+    width: 100%;
+  }
+  
   /* JUMBOTRON CONTAINER END */
   /* JUMBOTRON CONTAINER END */
   /* JUMBOTRON CONTAINER END */
   /* JUMBOTRON CONTAINER END */
   /* JUMBOTRON CONTAINER END */
+  
+  /* ------------------------------------- */
+  /* ------------------------------------- */
+  /* ------------------------------------- */
+  /* ------------------------------------- */
+  /* ------------------------------------- */
+  
+  
+  /* ENDER GRID CONTAINER START */
+  /* ENDER GRID CONTAINER START */
+  /* ENDER GRID CONTAINER START */
+  /* ENDER GRID CONTAINER START */
+  /* ENDER GRID CONTAINER START */
+  
+  .under-grid {
+    margin: 5em 0em;
+  }
+  
+  .under-grid .bottom {
+    width: 90%;
+    margin: 5em auto 0em auto;
+  }
+  
+  .under-grid .bottom h2 {
+    font-size: 3em;
+  }
+  
+  .under-grid .bottom p {
+    width:100%;
+  }
+  
+  .under-grid h2#title {
+    margin-bottom: 1em;
+    font-size: 3em;
+  }
+  
+  .under-grid .top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .under-grid .top div {
+    width: 100%;
+    margin-bottom:2em;
+  }
+  
+  section.wrapped-text-section {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section.wrapped-text-section .circle.circle1,
+  section.wrapped-text-section .circle.circle2 {
+    width: 250px;
+    height:250px;
+    float: initial;
+  }
+  
+  /* ENDER GRID CONTAINER END */
+  /* ENDER GRID CONTAINER END */
+  /* ENDER GRID CONTAINER END */
+  /* ENDER GRID CONTAINER END */
+  /* ENDER GRID CONTAINER END */
   
   
   /* ------------------------------------- */
