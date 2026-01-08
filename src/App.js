@@ -1,11 +1,9 @@
 import favicon from './img/favicon.png';
+import React, { useState, useEffect } from 'react';
 
 import {Header} from "./components/header.js";
-import {UnderHeader} from "./components/underHeader.js";
-import {Jumbotron} from "./components/jumbotron.js";
-import {Banner} from "./components/banner.js";
-import {JumbotronContainer} from "./components/jumbotronContainer.js";
-import {UnderGridContainer} from "./components/underGridContainer.js";
+import {HomePage} from "./pages/home/index.js";
+import {ContactPage} from "./pages/contact/index.js";
 import {Footer} from "./components/footer.js";
 import './App.css';
 
@@ -15,14 +13,14 @@ if (link) {
 }
 
 function App() {
+  
+  const [currentPage, setCurrentPage] = useState("home");
+  
   return (
     <div className="App">
-      <Header />
-      <UnderHeader />
-      <Jumbotron />
-      <Banner />
-      <JumbotronContainer />
-      <UnderGridContainer />
+      <Header setCurrentPage={setCurrentPage} currentPage={currentPage}/>
+      {currentPage == "home" && <HomePage />}
+      {currentPage == "contact" && <ContactPage />}
       <Footer />
     </div>
   );

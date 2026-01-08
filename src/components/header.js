@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../img/mario-pizza-logo.png';
 
-export const Header = () => {
-  // State for the burger menu
+export const Header = ({currentPage, setCurrentPage}) => {
+  
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
-  // State to control the header's top position (hidden at -150px by default)
+  // the header's top position (hidden at -150px by default)
   const [headerTop, setHeaderTop] = useState("-150px");
 
-  // Logic to handle the navbar sliding down on scroll
   useEffect(() => {
     const handleScroll = () => {
       // If user scrolls more than 20px, show the header at top: 0
@@ -68,11 +68,13 @@ export const Header = () => {
         </section>
         
         <ul>
-          <li className="gone"><a href="index.html">Home</a></li>
-          <li className="gone"><a href="about-us.html">About us</a></li>
-          <li className="gone"><a href="purchase.html">Purchase</a></li>
-          <li className="gone"><a href="featured.html">Featured</a></li>
-          <li className="gone"><a href="contact-us.html">Contact us</a></li>
+          <li className="gone"><a href="">Home</a></li>
+          <li className="gone"><a href="">About us</a></li>
+          <li className="gone"><a href="">Purchase</a></li>
+          <li className="gone"><a href="">Featured</a></li>
+          <li className="gone" onClick={()=>setCurrentPage("contact")}>
+            Contact us
+          </li>
           
           <li id="invisible-burger">
             <section className={`drop-links ${isMenuOpen ? 'menu-off' : ''}`}>
