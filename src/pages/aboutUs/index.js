@@ -13,13 +13,10 @@ export const AboutUs = () => {
       <h1>ABOUT US</h1>
       <h1>ABOUT US</h1>
       <h1>ABOUT US</h1>
-      <h1>ABOUT US</h1>
-      <h1>ABOUT US</h1>
-      <h1>ABOUT US</h1>
-      <h1>ABOUT US</h1>
-      <h1>ABOUT US</h1>
-      <h1>ABOUT US</h1>
-      <h1>ABOUT US</h1>
+      <Jumbotron />
+      <Banner />
+      <JumbotronContainer />
+      <UnderGridContainer />
     </div>
   )
 }
