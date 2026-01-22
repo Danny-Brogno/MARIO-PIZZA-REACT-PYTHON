@@ -305,7 +305,7 @@ header nav section.searchBar-chart ol li i {
 /* UNDER HEADER START */
 
 .under-header {
-  height:100vh;
+  height: 100vh;
   background-image: url('./img/super-mario.png');
   background-position: center;
   background-size: cover;

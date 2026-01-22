@@ -1,30 +1,26 @@
-import favicon from './img/favicon.png';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-import {Header} from "./components/header.js";
-import {HomePage} from "./pages/home/index.js";
-import {ContactPage} from "./pages/contact/index.js";
-import {AboutUs} from "./pages/aboutUs/index.js";
-import {OrderOnline} from "./pages/orderOnline/index.js";
-import {Footer} from "./components/footer.js";
-import './App.css';
+// ELEMENTS THAT ARE IN EVERY PAGE
+import { Header } from './components/header.js';
+import { Footer } from './components/footer.js';
+// OTHER PAGES
+import { HomePage } from './pages/homepage/homepage.js';
+import {ContactPage} from "./pages/contact/contact.js";
+import {AboutUs} from "./pages/aboutUs/aboutUs.js";
+import {OrderOnline} from "./pages/orderOnline/orderOnline.js";
 
-const link = document.querySelector("link[rel~='icon']");
-if (link) {
-  link.href = favicon;
-}
-
+// LOGIC
 function App() {
   
-  const [currentPage, setCurrentPage] = useState("home");
+  const [currentPage, setCurrentPage] = useState("homepage");
   
   return (
     <div className="App">
       <Header setCurrentPage={setCurrentPage} currentPage={currentPage}/>
-      {currentPage == "home" && <HomePage />}
-      {currentPage == "contact" && <ContactPage />}
-      {currentPage == "aboutUs" && <AboutUs />}
-      {currentPage == "orderOnline" && <OrderOnline />}
+      {currentPage === "homepage" && <HomePage />}
+      {currentPage === "contact" && <ContactPage />}
+      {currentPage === "aboutUs" && <AboutUs />}
+      {currentPage === "orderOnline" && <OrderOnline />}
       <Footer />
     </div>
   );
