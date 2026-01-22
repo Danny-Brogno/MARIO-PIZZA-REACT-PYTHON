@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // ELEMENTS THAT ARE IN EVERY PAGE
 import { Header } from './components/header.js';
