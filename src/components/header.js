@@ -7,7 +7,7 @@ export const Header = ({currentPage, setCurrentPage}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   // the header's top position (hidden at -150px by default)
-  const [headerTop, setHeaderTop] = useState("-150px");
+  const [headerTop, setHeaderTop] = useState("-100px");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,7 +15,7 @@ export const Header = ({currentPage, setCurrentPage}) => {
       if (window.scrollY > 20) {
         setHeaderTop("0");
       } else {
-        setHeaderTop("-150px");
+        setHeaderTop("-100px");
       }
     };
 
@@ -59,10 +59,10 @@ export const Header = ({currentPage, setCurrentPage}) => {
   };
 
   return (
-    <header style={{ top: headerTop }}>
+    <header id="header-global" style={{ top: headerTop }}>
       <nav id="navbar">
         <section className="logo-container">
-          <a href="">
+          <a href="" onClick={()=>setCurrentPage("homepage")}>
             <img src={logo} alt="logo-here" />
           </a>
         </section>

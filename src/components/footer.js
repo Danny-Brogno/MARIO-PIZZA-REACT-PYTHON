@@ -9,7 +9,7 @@ const scrollToTheTop = () => {
 
 export const Footer = ({currentPage, setCurrentPage}) => {
   return (
-    <footer>
+    <footer id="footer-global">
       <section className="top-footer">
         <div className="left">
           <div className="titles left">

@@ -9,11 +9,10 @@ import favicon1 from '../../img/favicon-aboutUs.png';
 
 export const AboutUs = () => {
   
-  // Scroll to the top logic
+  // Sctoll to the top logic
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []); 
-  
+  })
   // Favicon logic
   const link = document.querySelector("link[rel~='icon']");
   if (link) {
@@ -21,7 +20,7 @@ export const AboutUs = () => {
   }
   
   return (
-    <div id="about-us">
+    <div id="about-us-page">
       <UnderHeaderAboutUs />
     </div>
   )
