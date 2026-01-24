@@ -62,9 +62,9 @@ export const Header = ({currentPage, setCurrentPage}) => {
     <header id="header-global" style={{ top: headerTop }}>
       <nav id="navbar">
         <section className="logo-container">
-          <a href="" onClick={()=>setCurrentPage("homepage")}>
+          <span onClick={()=>setCurrentPage("homepage")}>
             <img src={logo} alt="logo-here" />
-          </a>
+          </span>
         </section>
         
         <ul>
@@ -111,10 +111,10 @@ export const Header = ({currentPage, setCurrentPage}) => {
               </button>
 
               <ul className={`dropdown ${isMenuOpen ? 'menu-on' : 'hide'}`} onMouseLeave={closeMenu}>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><span onClick={()=>setCurrentPage("homepage")}>Home</span></li>
+                <li><span onClick={()=>setCurrentPage("aboutUs")}>About</span></li>
+                <li><span onClick={()=>setCurrentPage("orderOnline")}>Order online</span></li>
+                <li><span onClick={()=>setCurrentPage("contact")}>Contact</span></li>
               </ul>
             </section>
           </li>

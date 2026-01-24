@@ -6,8 +6,6 @@ import aboutPizza4 from '../img/about-image-4.jpg';
 import aboutPizza5 from '../img/about-image-5.jpg';
 import aboutPizza6 from '../img/about-image-6.jpg';
 import aboutPizza7 from '../img/about-image-7.jpg';
-import aboutPizza8 from '../img/about-image-8.jpg';
-import aboutPizza9 from '../img/about-image-9.jpg';
 
 export const UnderHeaderAboutUs = () => {
   
@@ -72,29 +70,29 @@ export const UnderHeaderAboutUs = () => {
         <div><img src={aboutPizza5} alt="" /></div>
         <div><img src={aboutPizza6} alt="" /></div>
         <div><img src={aboutPizza7} alt="" /></div>
-        <div><img src={aboutPizza8} alt="" /></div>
+        <div><img src={aboutPizza1} alt="" /></div>
       </div>
 
       <div className="set set2">
-      <div><img src={aboutPizza9} alt="" /></div>
-      <div><img src={aboutPizza1} alt="" /></div>
       <div><img src={aboutPizza2} alt="" /></div>
       <div><img src={aboutPizza3} alt="" /></div>
       <div><img src={aboutPizza4} alt="" /></div>
       <div><img src={aboutPizza5} alt="" /></div>
       <div><img src={aboutPizza6} alt="" /></div>
       <div><img src={aboutPizza7} alt="" /></div>
+      <div><img src={aboutPizza1} alt="" /></div>
+      <div><img src={aboutPizza2} alt="" /></div>
       </div>
 
       <div className="set set3">
-      <div><img src={aboutPizza8} alt="" /></div>
-      <div><img src={aboutPizza9} alt="" /></div>
-      <div><img src={aboutPizza2} alt="" /></div>
       <div><img src={aboutPizza3} alt="" /></div>
       <div><img src={aboutPizza4} alt="" /></div>
       <div><img src={aboutPizza5} alt="" /></div>
       <div><img src={aboutPizza6} alt="" /></div>
       <div><img src={aboutPizza7} alt="" /></div>
+      <div><img src={aboutPizza1} alt="" /></div>
+      <div><img src={aboutPizza2} alt="" /></div>
+      <div><img src={aboutPizza3} alt="" /></div>
       </div>
 
     </div>
