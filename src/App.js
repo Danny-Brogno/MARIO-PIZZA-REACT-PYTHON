@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 // ELEMENTS THAT ARE IN EVERY PAGE
 import { Header } from './components/header.js';
 import { Footer } from './components/footer.js';
@@ -8,7 +8,7 @@ import { ContactPage } from "./pages/contact/contact.js";
 import { AboutUs } from "./pages/aboutUs/aboutUs.js";
 import { OrderOnline } from "./pages/orderOnline/orderOnline.js";
 
-// LOGIC
+// --------------------------
 function App() {
   
   const [currentPage, setCurrentPage] = useState("homepage");

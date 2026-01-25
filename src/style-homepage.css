@@ -416,7 +416,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 2em auto 0em auto;
 }
 
-#homepage .jumbotron-scrolling-carousel section .container-right .btn-container a {
+#homepage .jumbotron-scrolling-carousel section .container-right .btn-container button {
   padding:1em 6em;
   background-color: var(--pizza-yellow);
   border-radius: 10px;
@@ -424,7 +424,7 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
 }
 
-#homepage .jumbotron-scrolling-carousel section .container-right .btn-container a:hover {
+#homepage .jumbotron-scrolling-carousel section .container-right .btn-container button:hover {
   background-color: var(--pizza-green);
   color: var(--pizza-yellow);
 }
@@ -543,14 +543,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-#homepage .jumbotron-static-image section .container-right .btn-container a {
+#homepage .jumbotron-static-image section .container-right .btn-container button {
   padding:1em 6em;
   background-color: var(--pizza-yellow);
   border-radius: 10px;
   transition:0.5s;
 }
 
-#homepage .jumbotron-static-image section .container-right .btn-container a:hover {
+#homepage .jumbotron-static-image section .container-right .btn-container button:hover {
   background-color: var(--pizza-green);
   color: var(--pizza-yellow);
 }

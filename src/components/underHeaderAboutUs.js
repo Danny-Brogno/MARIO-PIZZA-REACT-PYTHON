@@ -7,10 +7,12 @@ import aboutPizza5 from '../img/favicon-random1.png';
 import aboutPizza6 from '../img/favicon-random2.png';
 import pizzaBackground from '../img/about-us-under-header-image.png';
 
+// SPLITTING is the text scrolling effect
 import 'splitting/dist/splitting.css';
 import 'splitting/dist/splitting.js';
 import Splitting from 'splitting';
 
+// --------------------------
 export const UnderHeaderAboutUs = () => {
   
   useEffect(() => {
@@ -32,7 +34,10 @@ export const UnderHeaderAboutUs = () => {
         
           <div>
             <p data-splitting>
-              In 1925, Mario traded his plumbing wrench for a rolling pin, realizing that fixing leaky pipes was far less lucrative than feeding the masses. Legend says he discovered the "Secret Sauce" after accidentally dropping a Fire Flower into a vat of San Marzano tomatoes—giving the crust its signature kick. Alongside Peach, who brought royal standards to the kitchen (and kept Mario from jumping on the customers), they built an empire. Today, we’ve traded the pixelated apron for premium dough, but our mission remains: rescuing you from mediocre meals. One slice, and you’ll realize the princess isn't in another castle—she’s here, eating pepperoni.
+              In 1925, Mario traded his plumbing wrench for a rolling pin, realizing that fixing leaky pipes was far less lucrative than feeding the masses. 
+              Legend says he discovered the "Secret Sauce" after accidentally dropping a Fire Flower into a vat of San Marzano tomatoes giving the crust its signature kick. 
+              Alongside Peach, who brought royal standards to the kitchen (and kept Mario from jumping on the customers), they built an empire. 
+              One slice, and you’ll realize the princess isn't in another castle she’s here, eating pepperoni.
             </p>
           </div>
           
@@ -42,7 +47,10 @@ export const UnderHeaderAboutUs = () => {
           
           <div>
             <p data-splitting>
-              In 1925, Mario left the comfort of the familiar to honor a heritage written in flour and sweat. It wasn't about games; it was about the sacrifice of a man who worked until his hands were stained with the earth of Italy. He brought nothing but a sourdough starter and recipes whispered by his grandmother under the Tuscan sun. Every dough ball is aged for forty-eight hours, a testament to the patience that true craft demands. We don't cut corners; we honor the legacy of hard-earned tradition, serving authentic, wood-fired history that tastes of home and heart.
+              In 1925, Mario left the comfort of the familiar to honor a heritage written in flour and sweat. 
+              It wasn't about games; it was about the sacrifice of a man who worked until his hands were stained with the earth of Italy. 
+              Every dough ball is aged for forty-eight hours, a testament to the patience that true craft demands. 
+              We don't cut corners; we honor the legacy of hard-earned tradition, serving authentic, wood-fired history that tastes of home and heart.
             </p>
           </div>
           

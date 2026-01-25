@@ -37,9 +37,9 @@ export const JumbotronStaticImage = () => {
           </p>
           
           <div className="btn-container">
-            <a href="#">
+            <button type="button">
               READ MORE
-            </a>
+            </button>
           </div>
           
           

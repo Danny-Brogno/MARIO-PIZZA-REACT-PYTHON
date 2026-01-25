@@ -649,6 +649,11 @@ footer#footer-global .top-footer .middle .titles .under-titles h2 {
   width: 50%;
 }
 
+footer#footer-global .top-footer .middle .unordered-lists-footer {
+  display: flex;
+  height: 85%;
+}
+
 footer#footer-global .top-footer .middle ul {
   width:100%;
   display: flex;
@@ -659,6 +664,7 @@ footer#footer-global .top-footer .middle ul {
 /* FIRST UNORDERED LIST */
 /* FIRST UNORDERED LIST */
 /* FIRST UNORDERED LIST */
+
 footer#footer-global .top-footer .middle ul li {
   list-style-type: square;
   list-style-position: inside;
@@ -669,18 +675,17 @@ footer#footer-global .top-footer .middle ul li i {
   font-size: 1.4em;
 }
 
-footer#footer-global .top-footer .middle ul li a {
+footer#footer-global .top-footer .middle ul li button {
   cursor: pointer;
   transition: 0.4s;
+  background: none;
+  border: none;
+  font-size: 1em;
+  color: var(--pizza-yellow);
 }
 
-footer#footer-global .top-footer .middle ul a:hover {
+footer#footer-global .top-footer .middle ul button:hover {
   color: var(--pizza-red) !important;
-}
-
-footer#footer-global .top-footer .unordered-lists-footer {
-  display: flex;
-  height: 85%;
 }
 
 /* SECOND UNORDERED LIST */

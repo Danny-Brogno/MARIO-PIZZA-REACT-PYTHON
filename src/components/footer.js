@@ -37,17 +37,17 @@ export const Footer = ({currentPage, setCurrentPage}) => {
           
           <div className="unordered-lists-footer">
             <ul>
-              <li><a onClick={()=>setCurrentPage("homepage")}>HOME</a></li>
-              <li><a onClick={()=>setCurrentPage("aboutUs")}>ABOUT US</a></li>
-              <li><a onClick={()=>setCurrentPage("orderOnline")}>ORDER ONLINE</a></li>
-              <li><a onClick={()=>setCurrentPage("contact")}>CONTACT US</a></li>
+              <li><button type="button" onClick={()=>setCurrentPage("homepage")}>HOME</button></li>
+              <li><button type="button" onClick={()=>setCurrentPage("aboutUs")}>ABOUT US</button></li>
+              <li><button type="button" onClick={()=>setCurrentPage("orderOnline")}>ORDER ONLINE</button></li>
+              <li><button type="button" onClick={()=>setCurrentPage("contact")}>CONTACT US</button></li>
             </ul>
             <ul>
-              <li><a href=""><i className="fa-brands fa-square-facebook"></i>Facebook</a></li>
-              <li><a href=""><i className="fa-brands fa-instagram"></i>Instagram</a></li>
-              <li><a href=""><i className="fa-brands fa-linkedin"></i>Linkedin</a></li>
-              <li><a href=""><i className="fa-brands fa-x-twitter"></i>Twitter</a></li>
-              <li><a href=""><i className="fa-brands fa-tiktok"></i>Tik Tok</a></li>
+              <li><button type="button"><i className="fa-brands fa-square-facebook"></i>Facebook</button></li>
+              <li><button type="button"><i className="fa-brands fa-instagram"></i>Instagram</button></li>
+              <li><button type="button"><i className="fa-brands fa-linkedin"></i>Linkedin</button></li>
+              <li><button type="button"><i className="fa-brands fa-x-twitter"></i>Twitter</button></li>
+              <li><button type="button"><i className="fa-brands fa-tiktok"></i>Tik Tok</button></li>
             </ul>
           </div>
         </div>

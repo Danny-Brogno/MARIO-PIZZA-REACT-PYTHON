@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 
-// These lines pull the code directly from the npm package you just installed
+// SPLITTING is the text scrolling effect
 import 'splitting/dist/splitting.css';
 import 'splitting/dist/splitting.js';
 import Splitting from 'splitting';
 import pizzaLogo from '../img/pizza-logo.png';
+
+// --------------------------
 export const UnderHeader = () => {
   
   useEffect(() => {
