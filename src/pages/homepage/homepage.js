@@ -5,6 +5,7 @@ import { UnderHeader } from "../../components/underHeader.js";
 import { Jumbotron } from "../../components/jumbotron.js";
 import { Banner } from "../../components/banner.js";
 import { JumbotronScrollingCarousel } from "../../components/jumbotronScrollingCarousel.js";
+import { ThreeBoxContainerHomepage } from "../../components/threeBoxContainerHomepage.js"
 import { JumbotronStaticImage } from "../../components/jumbotronStaticImage.js";
 
 // CSS
@@ -38,6 +39,8 @@ export const HomePage = () => {
       <UnderHeader />
       <Jumbotron />
       <JumbotronScrollingCarousel />
+      <Banner />
+      <ThreeBoxContainerHomepage />
       <Banner />
       <JumbotronStaticImage />
     </div>

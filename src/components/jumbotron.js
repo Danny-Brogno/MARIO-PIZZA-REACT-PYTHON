@@ -55,7 +55,7 @@ export const Jumbotron = () => {
             </div>
             <div className="box" onClick={() => handleImageClick(pizza2)}>
               <img src={pizza2} alt="pizza2" style={{ cursor: 'pointer' }} />
-              <div className="dark"><h3>Salami</h3></div>
+              <div className="dark"><h3>Pepperoni</h3></div>
             </div>
             <div className="box" onClick={() => handleImageClick(pizza3)}>
               <img src={pizza3} alt="pizza3" style={{ cursor: 'pointer' }} />
@@ -75,7 +75,7 @@ export const Jumbotron = () => {
             </div>
             <div className="box" onClick={() => handleImageClick(pizza6)}>
               <img src={pizza6} alt="pizza6" style={{ cursor: 'pointer' }} />
-              <div className="dark"><h3>Garlic &amp; basil</h3></div>
+              <div className="dark"><h3>Primavera</h3></div>
             </div>
           </div>
 

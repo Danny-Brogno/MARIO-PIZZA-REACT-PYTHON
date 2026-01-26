@@ -1,12 +1,12 @@
 import React from 'react';
 import pizza1 from '../img/15.jpg';
 import pizza2 from '../img/16.jpg';
-import pizza3 from '../img/27.jpg';
+import pizza3 from '../img/28.jpg';
 
 // --------------------------
-export const ThreeBoxContainer = () => {
+export const ThreeBoxContainerAboutUs = () => {
   return (
-    <div className="three-box-container">
+    <div className="three-box-container-aboutUs">
     <h1>OUR VALUES</h1>
       <div className="top">
         <div>
@@ -15,27 +15,24 @@ export const ThreeBoxContainer = () => {
           <p>
             We believe that a great pizza starts with the integrity of its ingredients. 
             From our 48-hour slow-fermented dough to the sun-ripened San Marzano tomatoes, we never take shortcuts. 
-            Every slice is a testament to our commitment to sourcing only the finest, freshest local produce and imported Italian staples, ensuring that the last bite is just as exceptional as the first.
           </p>
         </div>
         
         <div>
           <img src={pizza2} alt="image-here" />
-          <h3>Community Connection</h3>
+          <h3>Mastered Consistency</h3>
           <p>
-            We believe that a great pizza starts with the integrity of its ingredients. 
-            From our 48-hour slow-fermented dough to the sun-ripened San Marzano tomatoes, we never take shortcuts. 
-            Every slice is a testament to our commitment to sourcing only the finest, freshest local produce and imported Italian staples, ensuring that the last bite is just as exceptional as the first.
+            A perfect pizza is not a lucky accident but a guarantee. 
+            Our core value is the mastery of the process, ensuring that every wood-fired crust has the same perfect char and every topping is balanced to precision. 
           </p>
         </div>
         
         <div>
           <img src={pizza3} alt="image-here" />
-          <h3>Mastered Consistency</h3>
+          <h3>Community Connection</h3>
           <p>
-            A pizzeria is more than just a place to eat—it is a gathering spot for friends, families, and neighbors. 
-            We value the relationships we build across the counter and are dedicated to giving back to the community that supports us. 
-            We don't just serve pizza; we create a space for shared memories, laughter, and a sense of belonging for everyone who walks through our doors.
+            A pizzeria is more than just a place to eat. It's a gathering for friends and families. 
+            We value the relationships we build across the counter and are dedicated to giving back to the community that supports us.
           </p>
         </div>
 

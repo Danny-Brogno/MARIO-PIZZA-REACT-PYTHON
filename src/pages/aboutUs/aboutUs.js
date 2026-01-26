@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import { UnderHeaderAboutUs } from "../../components/underHeaderAboutUs.js";
 import { MeetOurStaffContainer } from "../../components/meetOurStaffContainer.js";
 import { Banner } from "../../components/banner.js";
-import { ThreeBoxContainer } from "../../components/threeBoxContainer.js";
+import { ThreeBoxContainerAboutUs } from "../../components/threeBoxContainerAboutUs.js";
 
 // CSS
 import '../../style-global.css';
@@ -35,7 +35,7 @@ export const AboutUs = () => {
       <UnderHeaderAboutUs />
       <Banner />
       <MeetOurStaffContainer />
-      <ThreeBoxContainer />
+      <ThreeBoxContainerAboutUs />
     </div>
   )
 }
