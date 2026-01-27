@@ -1,152 +1,101 @@
 import React, { useState, useEffect } from 'react';
-import pizza1 from '../img/promotions1.jpg';
+import promotions1 from '../img/promotions1.jpg';
+import promotions2 from '../img/promotions2.jpg';
+import promotions3 from '../img/promotions3.jpg';
+import promotions4 from '../img/promotions4.jpg';
+import promotions5 from '../img/promotions5.jpg';
+import promotions6 from '../img/promotions6.jpg';
 
 export const Banner2 = () => {
-  // Create state to track if the overlay is open
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  
+  // ENLARGE IMAGES
+  // ENLARGE IMAGES
+  // ENLARGE IMAGES
+  
+  // State to track which image is enlarged
+  const [enlargedImg, setEnlargedImg] = useState(null);
 
-  // Logic to handle the body overflow (prevents scrolling when overlay is open)
-  useEffect(() => {
-    if (isNavOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-    
-    // Cleanup function to ensure class is removed if component unmounts
-    return () => document.body.classList.remove("overflow-hidden");
-  }, [isNavOpen]);
+  // Function to open the overlay
+  const handleImageClick = (imgSrc) => {
+    setEnlargedImg(imgSrc);
+  };
 
-  // Translated functions
-  const openNav = () => setIsNavOpen(true);
-  const closeNav = () => setIsNavOpen(false);
+  // Function to close the overlay
+  const closeOverlay = () => {
+    setEnlargedImg(null);
+  };
 
   return (
     <div className="banner two">
+
+      {enlargedImg && (
+        <div 
+          onClick={closeOverlay}
+          style={{
+            background: `RGBA(0,0,0,.9) url(${enlargedImg}) no-repeat center`,
+            backgroundSize: 'contain',
+            width: '100vw',
+            height: '100vh',
+            position: 'fixed',
+            zIndex: '99999',
+            top: '0',
+            left: '0',
+            cursor: 'pointer'
+          }}
+        />
+      )}
       <div className="top">
         <h2>
-          Discover our promotions or get in touch
-          <b className="contact-now" onClick={openNav}>here</b>
+          Discover our promotions
         </h2>
-
-        {/* The Overlay (controlled by isNavOpen state) */}
-        <div 
-          id="myNav" 
-          className="overlay" 
-          style={{ 
-            display: "block", 
-            height: isNavOpen ? "100%" : "0%",
-            visibility: isNavOpen ? "visible" : "hidden",
-            transition: "0.5s" 
-          }}
-        >
-          {/* Close Button */}
-          <button 
-            className="closebtn" 
-            onClick={closeNav}
-            style={{ background: 'none', border: 'none', cursor: 'pointer' }}
-          >
-            &times;
-          </button>
-
-          <div className="overlay-content">
-            <div className="inside">
-              <section className="big">
-                <h3>CONTACT US</h3>
-              </section>
-
-              <section>
-                <div className="left">
-                  <div className="upper">
-                    <label htmlFor="myDropdown">Please select a topic for your enquiry *</label>
-                    <select name="myDropdown" id="myDropdown" required>
-                      <option value="option1">You don't like our pizza</option>
-                      <option value="option2">You love our pizza</option>
-                      <option value="option3">You wanna work with us</option>
-                      <option value="option4">You feel sick after eating our pizza</option>
-                    </select>
-                  </div>
-
-                  <div className="lower">
-                    <textarea 
-                      name="Text1" 
-                      cols="40" 
-                      rows="7" 
-                      placeholder="Hello my name is Luigi and I love your pizza..." 
-                      required
-                    ></textarea>
-                  </div>
-                </div>
-                
-                <div className="right">
-                  <div>
-                    <label htmlFor="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname" required />
-                  </div>
-                  <div>
-                    <label htmlFor="lastname">Last Name:</label>
-                    <input type="text" id="lastname" name="lastname" required />
-                  </div>
-                  <div>
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
-                  </div>
-                </div>
-              </section>
-              
-              <section>
-                <button type="button" name="button">SEND</button>
-              </section>
-            </div>
-          </div>
-        </div>
       </div>
 
       <section className="banner-slider">
+
         <div className="group">
-          <div className="card">
-            <img src={pizza1} alt="image-here"/>
+          <div className="card" onClick={() => handleImageClick(promotions1)}>
+            <img src={promotions1} alt="promo1"/>
           </div>
-          <div className="card">
-            <img src={pizza1} alt="image-here"/>
+          <div className="card" onClick={() => handleImageClick(promotions2)}>
+            <img src={promotions2} alt="promo2"/>
           </div>
-          <div className="card">
-            <img src={pizza1} alt="image-here"/>
+          <div className="card" onClick={() => handleImageClick(promotions3)}>
+            <img src={promotions3} alt="promo3"/>
           </div>
-          <div className="card">
-            <img src={pizza1} alt="image-here"/>
+          <div className="card" onClick={() => handleImageClick(promotions4)}>
+            <img src={promotions4} alt="promo4"/>
           </div>
-          <div className="card">
-            <img src={pizza1} alt="image-here"/>
+          <div className="card" onClick={() => handleImageClick(promotions5)}>
+            <img src={promotions5} alt="promo5"/>
           </div>
-          <div className="card">
-            <img src={pizza1} alt="image-here"/>
+          <div className="card" onClick={() => handleImageClick(promotions6)}>
+            <img src={promotions6} alt="promo6"/>
           </div>
         </div>
         <div aria-hidden className="group">
         
-          <div className="card">
-            
+          <div className="card" onClick={() => handleImageClick(promotions1)}>
+            <img src={promotions1} alt="promo1"/>
           </div>
           
-          <div className="card">
-          
+          <div className="card" onClick={() => handleImageClick(promotions2)}>
+            <img src={promotions2} alt="promo2"/>
           </div>
           
-          <div className="card">
-          
+          <div className="card" onClick={() => handleImageClick(promotions3)}>
+            <img src={promotions3} alt="promo3"/>
           </div>
           
-          <div className="card">
-          
+          <div className="card" onClick={() => handleImageClick(promotions4)}>
+            <img src={promotions4} alt="promo4"/>
           </div>
           
-          <div className="card">
-          
+          <div className="card" onClick={() => handleImageClick(promotions5)}>
+            <img src={promotions5} alt="promo5"/>
           </div>
           
-          <div className="card">
-          
+          <div className="card" onClick={() => handleImageClick(promotions6)}>
+            <img src={promotions6} alt="promo6"/>
           </div>
           
         </div>

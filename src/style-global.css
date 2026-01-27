@@ -590,7 +590,7 @@ header nav ul li:hover {
   flex: 0 0 auto;
   min-width: 100%; 
   align-items: center;
-  animation: moving-left 15s linear infinite;
+  animation: moving-left 20s linear infinite;
   will-change: transform;
 }
 
@@ -606,17 +606,31 @@ header nav ul li:hover {
   justify-content: center;
   align-items: center;
   margin: 1em 0.5em;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .banner .banner-slider .group .card img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  pointer-events: none;
 }
 
 @keyframes moving-left {
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
+}
+
+.banner .banner-slider:hover .group {
+  animation-play-state: paused;
+}
+
+.banner .banner-slider .group .card:hover {
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  filter: brightness(1.1);
+  cursor: pointer;
+  z-index: 100;
 }
 
 /* BANNER SLIDER - END */
@@ -1073,38 +1087,38 @@ footer#footer-global section .scroll-top-btn ul:hover {
   /* BANNER START*/
   /* BANNER START*/
 
-  .banner1 {
+  .banner {
     height: initial;
     margin: 50px 0px 0px 0px;
   }
   
-  .banner1 .top {
+  .banner .top {
     height: initial;
     font-size: initial;
     width: 90%;
     margin: 0 auto 3em auto;
-    text-align: center;
+    text-align: center !important;
   }
   
-  .banner1 .contact-now {
+  .banner .contact-now {
     font-size: 1.3em;
     padding: 0;
   }
   
-  .banner1 section.banner-section {
+  .banner section.banner-section {
     flex-direction: column;
     height:initial;
   }
   
-  .banner1 section.banner-section div > img {
+  .banner section.banner-section div > img {
     margin-bottom: 2em;
   }
   
-  .banner1 section.banner-section .one img, 
-  .banner1 section.banner-section .two img, 
-  .banner1 section.banner-section .three img, 
-  .banner1 section.banner-section .four img, 
-  .banner1 section.banner-section .five img {
+  .banner section.banner-section .one img, 
+  .banner section.banner-section .two img, 
+  .banner section.banner-section .three img, 
+  .banner section.banner-section .four img, 
+  .banner section.banner-section .five img {
     width: 100%;
   }
   

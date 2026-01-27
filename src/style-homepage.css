@@ -575,7 +575,7 @@ body::-webkit-scrollbar-thumb:hover {
 #homepage .jumbotron-static-image section .container-left img {
   height:100%;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 #homepage .jumbotron-static-image section .container-left #slider {
@@ -1001,10 +1001,6 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     min-height: initial;
     height:initial;
-  }
-  
-  #homepage .jumbotron-static-image section .container-left {
-    display: none;
   }
   
   #homepage .jumbotron-static-image section .container-right {

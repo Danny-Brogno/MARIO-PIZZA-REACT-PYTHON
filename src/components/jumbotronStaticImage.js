@@ -1,5 +1,5 @@
 import React from 'react';
-import reviewsImage from '../img/reviews.png';
+import fidelityCard from '../img/fidelity-card.jpg';
 
 
 export const JumbotronStaticImage = () => {
@@ -8,37 +8,34 @@ export const JumbotronStaticImage = () => {
       <section>
         
         <div className="container-left">
-          <img src={reviewsImage} alt="image-here" />
+          <img src={fidelityCard} alt="fidelity-card" />
         </div>
         
         <div className="container-right">
           
           <div className="text">
+          
             <h2>
-              Try our delicious pizza!
+              &#11088; THE SUPER STAR PIZZA PASS
             </h2>
             
             <h3>
-              Money back guarantee If you have the courage to give it back without eating it
+              More than a card, it's a Power-Up for your hunger!
             </h3>
             
           </div>
           
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing 
-            elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Ut enim ad minim veniam, quis 
-            nostrud exercitation ullamco laboris nisi ut aliquip 
-            ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore 
-            eu fugiat nulla pariatur. Excepteur sint occaecat 
-            cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum.
+            Become a legend in our pizzeria with the Super Star Pizza Pass! Every time you order a fresh pizza, present your pass to our staff to earn a digital Star. 
+            Once you’ve collected 10 Stars, your next pizza of any size or choice is on the house. 
+            Your mission, should you choose to accept it, lasts for 3 months from the date of issuance. 
+            Please note that this card is non-transferable and must be presented at the time of purchase to receive your validation. 
+            Level up your lunch and start earning today!
           </p>
           
           <div className="btn-container">
             <button type="button" className="my-button-first" style={{margin: "3em 0em 0em 0em"}}>
-              READ MORE
+              GET CARD!
             </button>
           </div>
           

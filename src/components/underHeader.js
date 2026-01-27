@@ -4,7 +4,6 @@ import React, { useEffect } from 'react';
 import 'splitting/dist/splitting.css';
 import 'splitting/dist/splitting.js';
 import Splitting from 'splitting';
-import pizzaLogo from '../img/pizza-logo.png';
 
 // --------------------------
 export const UnderHeader = () => {
@@ -21,7 +20,6 @@ export const UnderHeader = () => {
         <div className="under-header-content">
           <div className="title-and-logo">
             <h2>MARIO PIZZA</h2>
-            <img id="pizza-logo" src={pizzaLogo} alt="pizzaLogo" />
           </div>
           
           {/* data-splitting tells the library which text to target */}

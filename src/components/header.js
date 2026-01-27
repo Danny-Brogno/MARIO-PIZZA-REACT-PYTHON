@@ -38,8 +38,8 @@ export const Header = ({currentPage, setCurrentPage}) => {
       ".three-box-container-homepage",
       ".three-box-container-aboutUs",
       ".logo-container",
-      ".banner1",
-      ".banner2",
+      ".banner",
+      ".banner.two",
       ".jumbotron-static-image",
       "footer"
     ];

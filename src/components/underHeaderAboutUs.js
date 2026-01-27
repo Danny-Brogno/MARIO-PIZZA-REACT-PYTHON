@@ -36,11 +36,11 @@ export const UnderHeaderAboutUs = () => {
           
             <p data-splitting>
               In 1925, Mario traded his plumbing wrench for a rolling pin, realizing that fixing leaky pipes was far less lucrative than feeding the masses. 
-              Legend says he discovered the "Secret Sauce" after accidentally dropping a Fire Flower into a vat of San Marzano tomatoes giving the crust its signature kick. 
+              Legend says he discovered the "Secret Sauce" after accidentally dropping a Fire Flower into a vat of San Marzano tomatoes. 
             </p>
             
             <p data-splitting>
-              Alongside Peach, who brought royal standards to the kitchen (and kept Mario from jumping on the customers), they built an empire. 
+              Alongside Peach, who brought royal standards to the kitchen, they built an empire. 
               One slice, and you’ll realize the princess isn't in another castle she’s here, eating pepperoni.
             </p>
             

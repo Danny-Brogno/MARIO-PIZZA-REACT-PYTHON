@@ -28,7 +28,7 @@ export const Jumbotron = () => {
       <section className="main-container">
         <h1> OUR &nbsp;MEN&Ugrave; </h1>
 
-        {/* 4. THE OVERLAY (Only shows when an image is clicked) */}
+        {/* THE OVERLAY (Only shows when an image is clicked) */}
         {enlargedImg && (
           <div 
             onClick={closeOverlay}
