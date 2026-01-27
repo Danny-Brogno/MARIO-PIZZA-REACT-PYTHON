@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import pizza1 from '../img/promotions1.jpg';
 
 export const Banner2 = () => {
   // Create state to track if the overlay is open
@@ -24,8 +25,8 @@ export const Banner2 = () => {
     <div className="banner two">
       <div className="top">
         <h2>
-          ORDER ONLINE OR GET IN TOUCH BY CLICKING 
-          <b className="contact-now" onClick={openNav}> HERE</b>
+          Discover our promotions or get in touch  
+          <b className="contact-now" onClick={openNav}> here</b>
         </h2>
 
         {/* The Overlay (controlled by isNavOpen state) */}
@@ -101,11 +102,55 @@ export const Banner2 = () => {
         </div>
       </div>
 
-      <section className="banner-section">
+      <section className="banner-slider">
+        <div className="group">
+          <div className="card">
+            <img src={pizza1} alt="image-here"/>
+          </div>
+          <div className="card">
+            <img src={pizza1} alt="image-here"/>
+          </div>
+          <div className="card">
+            <img src={pizza1} alt="image-here"/>
+          </div>
+          <div className="card">
+            <img src={pizza1} alt="image-here"/>
+          </div>
+          <div className="card">
+            <img src={pizza1} alt="image-here"/>
+          </div>
+          <div className="card">
+            <img src={pizza1} alt="image-here"/>
+          </div>
+        </div>
+        <div aria-hidden className="group">
         
+          <div className="card">
+            
+          </div>
+          
+          <div className="card">
+          
+          </div>
+          
+          <div className="card">
+          
+          </div>
+          
+          <div className="card">
+          
+          </div>
+          
+          <div className="card">
+          
+          </div>
+          
+          <div className="card">
+          
+          </div>
+          
+        </div>
       </section>
     </div>
   );
 };
-
-
