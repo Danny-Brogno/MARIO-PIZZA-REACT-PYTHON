@@ -25,8 +25,8 @@ export const Banner2 = () => {
     <div className="banner two">
       <div className="top">
         <h2>
-          Discover our promotions or get in touch  
-          <b className="contact-now" onClick={openNav}> here</b>
+          Discover our promotions or get in touch
+          <b className="contact-now" onClick={openNav}>here</b>
         </h2>
 
         {/* The Overlay (controlled by isNavOpen state) */}
