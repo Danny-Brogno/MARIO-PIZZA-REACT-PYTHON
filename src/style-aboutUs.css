@@ -687,6 +687,60 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media screen and (max-width: 1024px) and (orientation: portrait) {
   
+  /* UNDER HEADER (raining pizzas) - START */
+  /* UNDER HEADER (raining pizzas) - START */
+  /* UNDER HEADER (raining pizzas) - START */
+  /* UNDER HEADER (raining pizzas) - START */
+  /* UNDER HEADER (raining pizzas) - START */
+  
+  #about-us-page .under-header-AboutUs .central-container {
+    height: initial;
+  }
+  
+  #about-us-page .under-header-AboutUs .central-container div.top,
+  #about-us-page .under-header-AboutUs .central-container div.center,
+  #about-us-page .under-header-AboutUs .central-container div.bottom {
+    height: initial;
+  }
+  
+  #about-us-page .under-header-AboutUs .central-container div.center{
+    flex-direction: column;
+  }
+  
+  #about-us-page .under-header-AboutUs .central-container div.center div:first-child,
+  #about-us-page .under-header-AboutUs .central-container div.center div:nth-child(2),
+  #about-us-page .under-header-AboutUs .central-container div.center div:last-child {
+    width: 100%;
+  }
+  
+  #about-us-page .under-header-AboutUs .central-container div.center div:last-child {
+    margin: 2em 0em;
+  }
+  
+  #about-us-page .under-header-AboutUs .central-container div.center div:nth-child(2) img {
+    height: initial;
+    margin-top: 2em;
+  }
+  
+  #about-us-page .under-header-AboutUs .set div img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* UNDER HEADER (raining pizzas) - END */
+  /* UNDER HEADER (raining pizzas) - END */
+  /* UNDER HEADER (raining pizzas) - END */
+  /* UNDER HEADER (raining pizzas) - END */
+  /* UNDER HEADER (raining pizzas) - END */
+  
+  /* -------------------------------------- */
+  
+  /* MEET OUR STAFF - START */
+  /* MEET OUR STAFF - START */
+  /* MEET OUR STAFF - START */
+  /* MEET OUR STAFF - START */
+  /* MEET OUR STAFF - START */
+  
   #about-us-page .meet-our-staff-container {
     margin: 5em 0em;
   }
@@ -720,6 +774,8 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom:2em;
   }
   
+  /* INSIDE "MEET OUR STAFF" -> .wrapped-text-section */
+  
   #about-us-page section.wrapped-text-section {
     width: 100%;
     text-align: left;
@@ -736,6 +792,14 @@ body::-webkit-scrollbar-thumb:hover {
     height:250px;
     float: initial;
   }
+  
+  /* INSIDE "MEET OUR STAFF" -> .wrapped-text-section */
+  
+  /* MEET OUR STAFF - START */
+  /* MEET OUR STAFF - START */
+  /* MEET OUR STAFF - START */
+  /* MEET OUR STAFF - START */
+  /* MEET OUR STAFF - START */
   
 }
 

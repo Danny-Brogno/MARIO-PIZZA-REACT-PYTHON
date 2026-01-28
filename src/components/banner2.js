@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import promotions1 from '../img/promotions1.jpg';
 import promotions2 from '../img/promotions2.jpg';
 import promotions3 from '../img/promotions3.jpg';
@@ -72,6 +72,7 @@ export const Banner2 = () => {
             <img src={promotions6} alt="promo6"/>
           </div>
         </div>
+        
         <div aria-hidden className="group">
         
           <div className="card" onClick={() => handleImageClick(promotions1)}>
@@ -99,7 +100,9 @@ export const Banner2 = () => {
           </div>
           
         </div>
+        
       </section>
+      
     </div>
   );
 };
