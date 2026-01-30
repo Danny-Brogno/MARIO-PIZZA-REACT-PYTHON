@@ -109,3 +109,6 @@ random_number = random.randrange(1,101)
 # Printing the random number along with its data type
 print(f"Random Number: {random_number}")
 print("Data Type:", type(random_number))
+
+print("--------------------------------------------------------------------------------------------")
+
