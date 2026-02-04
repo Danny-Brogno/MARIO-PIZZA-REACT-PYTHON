@@ -129,6 +129,8 @@ for fullName in fullName:
 
 print("--------------------------------------------------------------------------------------------")
 
+nineteen = 19
+string_and_number = f"I am {nineteen}"
 status = "   i am feeling STRESSED and overwhelmed   "
 # Task: 
 # 1. Remove the extra spaces at the start and end using .strip()
@@ -140,5 +142,5 @@ replaced = stripped.replace("STRESSED", "calm")
 toUpperCase = replaced.upper()
 print(status.strip().replace("STRESSED", "calm").upper())
 print(toUpperCase)
-
+print(string_and_number)
 print("--------------------------------------------------------------------------------------------")
