@@ -117,7 +117,8 @@ fullName = "Danny Brogno"
 job = "web developer"
 print(fullName[0:5])
 print(fullName[0], fullName[4])
-
+print(job.upper())
+print(job.replace("developer", "manager").upper())
 if "Danny" not in fullName:
     print(f"There is no Danny")
 elif "Danny" in fullName:
@@ -125,3 +126,19 @@ elif "Danny" in fullName:
     
 for fullName in fullName:
     print(fullName)
+
+print("--------------------------------------------------------------------------------------------")
+
+status = "   i am feeling STRESSED and overwhelmed   "
+# Task: 
+# 1. Remove the extra spaces at the start and end using .strip()
+# 2. Replace "STRESSED" with "CALM"
+# 3. Make the whole thing UPPERCASE
+# 4. Print the result
+stripped = status.strip()
+replaced = stripped.replace("STRESSED", "calm")
+toUpperCase = replaced.upper()
+print(status.strip().replace("STRESSED", "calm").upper())
+print(toUpperCase)
+
+print("--------------------------------------------------------------------------------------------")
